@@ -1,5 +1,18 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { Metadata } from 'next';
+
+// export const metadata: Metadata = {
+//   title: 'top-app',
+//   description: 'Наш учебный проект на Next.js'
+// }
+
+export async function generateMetadata(): Promise<Metadata>{
+  return {
+    title: 'top-app',
+    description: 'Наш учебный проект на Next.js'
+  }
+}
 
 export default function Home() {
   return (
